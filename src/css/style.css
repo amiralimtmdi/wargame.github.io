@@ -75,7 +75,7 @@ section {
 .navigation {
   display: flex;
   justify-content: space-around;
-  padding: 1.5rem 0px;
+  padding: 0.9rem 0px;
   position: absolute;
   background: #1e2b37;
   width: 100%;
