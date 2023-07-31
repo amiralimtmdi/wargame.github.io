@@ -176,12 +176,13 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   border: 0.5px solid #57d6ff;
-  background-image: url("../../img/header2.png");
+  background-image: url("../../img/header2.webp");
+  backface-visibility: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: -33px 17px 29px 0px rgba(0, 0, 0, 0.25), 0px 0px 29px 0px #00c5ff ;
+  box-shadow: -33px 17px 29px 0px rgba(0, 0, 0, 0.25), 0px 0px 29px 0px #00c5ff;
 }
 
 .header__text h5 {
