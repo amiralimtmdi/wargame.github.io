@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/LogoBlue.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tektur&family=Voltaire&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Login</title>
+
+    <style>
+        .login-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10rem;
+            gap: 2rem;
+        }
+
+        .login__facebook-login {
+            width: 16rem;
+            height: 3rem;
+            background-color: rgb(39, 114, 226);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 1rem !important;
+            font-family: "Tektur";
+        }
+
+        .login__title {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .form-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-1 input {
+            width: 20rem;
+            height: 3rem;
+            box-sizing: border-box;
+            padding: 0 1rem;
+            outline: none;
+            font-family: 'Tektur';
+        }
+
+        .form-1 input::placeholder {
+            font-family: 'Tektur';
+        }
+
+        .form-2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .form-2 .btn {
+            width: 12rem;
+            height: 3rem;
+            font-family: 'Roboto';
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+
+        .check-box::before {
+            content: " ";
+            position: absolute;
+            background-color: #141c24;
+            top: -14px;
+            right: -16px;
+            width: 2.3rem;
+            height: 2rem;
+            transform: rotate(45deg);
+        }
+
+        .form-2 .check-box {
+            font-size: 1.1rem;
+            display: grid;
+            grid-template-columns: 2rem auto;
+            font-family: 'Roboto';
+        }
+
+        .success-container {
+            margin-top: 2rem;
+        }
+
+        .success-container p {
+            color: #ABABAB;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 180%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container login-container">
+        <div class="login__facebook-login">
+            <span>Login with facebook</span>
+        </div>
+
+        <div class="login__title">
+            <a href="index.html"
+                style=" color: white;margin: 0 !important;text-decoration: none; align-self: center;"><span>&#10094;</span>
+            </a>
+            <h2>Registration</h2>
+        </div>
+
+        <form class="form">
+            <div class="form-1 form-part">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-2 form-part">
+                <label class="check-box" for="check">
+                    <input id="check" type="checkbox" >
+                    Remember
+                </label>
+                <input class="btn" type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+
+    <div class="container success-container"  >
+        <div class="login__title">
+            <a href="index.html"
+                style=" color: white;margin: 0;text-decoration: none; align-self: center;"><span>&#10094;</span>
+            </a>
+            <h2>A confirmation has been sent to your email</h2>
+        </div>
+
+        <p style="margin-bottom: 1rem;margin-top: 1rem;">A message has been sent to your inbox containing a link to confirm the validity of your e-mail address.
+            Please
+            follow the link to complete your subscription.
+
+        </p>
+        <p> If you do not receive an email within 15 minutes, please check your Spam folder. If the letter suddenly
+            ended up
+            in this folder, open the letter, click the "Not spam" button and follow the confirmation link. If the letter
+            is
+            not in the Spam folder, try subscribing again. You may have made a mistake when entering the address.</p>
+    </div>
+
+    <script>
+
+        const successContainer = document.querySelector('.success-container')
+        const loginContainer = document.querySelector('.login-container'
+        )
+        successContainer.style.display = 'none'
+        document.querySelector('.form').addEventListener('submit' , function(e){
+            e.preventDefault()
+            loginContainer.style.display = 'none'
+            successContainer.style.display = 'block'
+        })
+        
+    </script>
+</body>
+
+</html>

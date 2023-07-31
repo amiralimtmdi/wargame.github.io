@@ -1,0 +1,190 @@
+/* ================= 1054px ================ */
+
+@media only screen and (max-width: 1054px) {
+  .menu-item {
+    font-size: 1rem !important;
+  }
+
+  /* change direction */
+  .how-it-work {
+    flex-direction: column-reverse;
+    padding-top: 5rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  .how-it-work__img {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* bring contant center */
+  .how-it-work__contant {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* Change position of text by display none/block */
+  .how-it-work__contant p,
+  .how-it-work__contant a,
+  hr {
+    display: none;
+  }
+
+  .how-it-work__contant--text {
+    display: block !important;
+  }
+
+  .how-it-work--responsive-text {
+    display: block !important;
+    color: #ababab;
+    font-family: Roboto;
+    font-size: 1.33313rem;
+    line-height: 150%;
+  }
+
+  /* make table wrap */
+  .table-sell__container {
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+/* ================= 790px ================ */
+@media only screen and (max-width: 790px) {
+  .container {
+    max-width: 470px;
+  }
+
+  /* change title size and links space */
+  h2 {
+    text-align: center;
+    font-size: 2.3rem !important;
+  }
+  a {
+    margin-top: 1.5rem !important ;
+  }
+
+  /* change style of navigation */
+  .navigation {
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: unset !important;
+    position: absolute;
+    height: 5%;
+    /* background: transparent !important; */
+    z-index: 2;
+  }
+
+  .navigation__menu {
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation__logo-part--logo {
+    fill: #fff !important;
+  }
+
+  .navigation__logo-part--name {
+    color: #fff !important;
+  }
+
+  .menu-item {
+    font-size: 1.4rem !important;
+  }
+
+  /* display hamberger icon */
+  .hamberger-icon {
+    display: block !important;
+    bottom: 0rem !important;
+    right: 1rem !important;
+  }
+  .close-icon {
+    display: block !important;
+  }
+
+  /* make the contant of header left */
+  .header {
+    padding-bottom: 0px !important;
+  }
+
+  .header::after {
+    height: 6rem !important;
+    bottom: -3rem !important;
+  }
+
+  .header__contant {
+    border-radius: unset !important;
+    padding: 0 2rem !important;
+    margin: unset !important;
+    box-shadow: unset !important;
+    align-items: unset !important;
+    text-align: unset !important;
+  }
+
+  .header__contant--btn {
+    padding: unset !important;
+    width: 11rem;
+    height: 3rem;
+  }
+
+  /* make space for section */
+  .fast-start {
+    padding-bottom: 7rem !important;
+  }
+
+  /* change direction and style of section */
+  .browser {
+    padding: 0 !important;
+    padding-top: 6rem !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .browser--image {
+    position: unset !important;
+    width: 100% !important;
+  }
+
+  .browser--contant {
+    width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* make space for section */
+  .map {
+    margin-top: 7rem !important;
+  }
+}
+
+/* ================= 480px ================ */
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 350px;
+  }
+
+  /* make more space and fix the items to container */
+  .table-sell {
+    padding: 1.5rem !important;
+  }
+
+  .table-sell__item {
+    width: 100% !important;
+  }
+
+  .table-sell__item--btn {
+    width: 100% !important;
+  }
+  .flex-footer {
+    flex-direction: column-reverse;
+  }
+}
