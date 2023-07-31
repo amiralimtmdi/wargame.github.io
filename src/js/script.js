@@ -39,7 +39,7 @@ menuItem.forEach((item) => {
 });
 
 // set header to size of window
-headerContant.style.height = `${(window.screen.height * 90) / 100}px`;
+headerContant.style.height = `${(window.screen.height * 85) / 100}px`;
 
 // move to top after per reload
 window.addEventListener("load", function () {
